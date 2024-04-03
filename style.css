@@ -1,6 +1,45 @@
+#chat{
+    height: 500px !important;
+}
+
+.messages{
+    height: 350px !important;
+    overflow-y: scroll !important;
+}
+
 .messages .msg{
-    border-radius: 2rem 2rem 2rem 0;
+    margin: 10px 0;
+}
+
+.messages .msg.owner .content {
+    display: flex;
+    justify-content: end;
+}
+
+.messages .msg.owner .content .text{
+    border-radius: 2rem 2rem 0 2rem;
     color: #fff;
     width: fit-content;
     font-weight: 600;
+}
+
+.datesent {
+    display: flex;
+    justify-content: end;
+}
+.datesent small{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+#chatbox {
+    border-radius: 2rem .5rem .5rem 2rem !important;
+    text-wrap: wrap !important;
+    height: 41px !important;
+    resize: none !important;
+}
+
+#sendchat{
+    border-radius: .5rem 2rem 2rem .5rem !important;
 }
