@@ -8,5 +8,6 @@ var pusher = new Pusher('ee268b03a8fb23b2e616', {
 var channel = pusher.subscribe('my-channel');
 
 channel.bind('my-event', function(data) {
-    alert(JSON.stringify(data));
+    var newDiv = $(`<div class='bg-primary owner msg p-2'>${data.message} by ${data.name}</div>`);
+    $(".messages").append(newDiv);
 });

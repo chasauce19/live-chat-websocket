@@ -13,4 +13,5 @@ $pusher = new Pusher\Pusher(
 );
 
 $data['message'] = 'hello world';
+$data['name'] = 'John';
 $pusher->trigger('my-channel', 'my-event', $data);

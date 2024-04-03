@@ -1,0 +1,6 @@
+.messages .msg{
+    border-radius: 2rem 2rem 2rem 0;
+    color: #fff;
+    width: fit-content;
+    font-weight: 600;
+}
