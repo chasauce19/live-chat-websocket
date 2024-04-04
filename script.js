@@ -43,7 +43,7 @@ channel.bind('my-event', function(data) {
                 </div>
             </div>
             <div class="datesent">
-                <small class="text-secondary">04/03/2024 10:35 PM</small>
+                <small class="text-secondary">${data.timestamp}</small>
             </div>
         </div>`
         );
